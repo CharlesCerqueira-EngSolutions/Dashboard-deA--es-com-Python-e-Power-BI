@@ -1,7 +1,7 @@
 import yfinance as yf
 
 def carregar_dados(ticker):
-    df= yf.Ticker(ticker).history("1y")
+    df= yf.Ticker(ticker).history('5y')
     df.reset_index(inplace=True)
     df['ticker'] = ticker.split(".")[0]
     return df
@@ -9,5 +9,5 @@ def carregar_dados(ticker):
 petrobras = carregar_dados("PETR4.SA")
 bb = carregar_dados("BBAS3.SA")
 vale= carregar_dados("VALE3.SA")
-bb.head()
 vale.head()
+
