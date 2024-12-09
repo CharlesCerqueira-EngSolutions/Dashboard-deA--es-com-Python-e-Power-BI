@@ -9,5 +9,5 @@ def carregar_dados(ticker):
 petrobras = carregar_dados("PETR4.SA")
 bb = carregar_dados("BBAS3.SA")
 vale= carregar_dados("VALE3.SA")
-vale.head()
+
 
